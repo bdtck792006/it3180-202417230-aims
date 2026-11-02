@@ -5,6 +5,29 @@ from aims.dvd import DigitalVideoDisc
 
 
 class TestCart(unittest.TestCase):
+    def test_sort_by_title(self):
+        cart = Cart()
+        cart.add_dvd(DigitalVideoDisc("Star Wars", cost=24.95))
+        cart.add_dvd(DigitalVideoDisc("Aladdin", cost=18.99))
+
+        cart.sort_by_title()
+
+        self.assertEqual(
+            [dvd.title for dvd in cart.items],
+            ["Aladdin", "Star Wars"],
+        )
+
+    def test_sort_by_cost(self):
+        cart = Cart()
+        cart.add_dvd(DigitalVideoDisc("Star Wars", cost=24.95))
+        cart.add_dvd(DigitalVideoDisc("Aladdin", cost=18.99))
+
+        cart.sort_by_cost()
+
+        self.assertEqual(
+            [dvd.cost for dvd in cart.items],
+            [18.99, 24.95],
+        )
     def test_add_dvd_until_full(self):
         cart = Cart()
 
