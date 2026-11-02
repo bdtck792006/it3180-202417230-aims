@@ -29,6 +29,11 @@ class TestCart(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             cart.total_cost_with_discount(150)
+    def test_discount_rejects_negative_percent(self):
+        cart = Cart()
+
+        with self.assertRaises(ValueError):
+            cart.total_cost_with_discount(-10)
 
 if __name__ == "__main__":
     unittest.main()
