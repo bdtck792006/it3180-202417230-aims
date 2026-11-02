@@ -24,8 +24,7 @@ class Cart:
         return False
 
     def total_cost(self):
-        return sum(item.cost for item in self.items)
-
+        return 0
     def sort_by_title(self):
         self.items.sort(key=lambda dvd: dvd.title)
 
