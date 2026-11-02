@@ -6,6 +6,24 @@
 
 
 
+\## \[1.1.0] - 2026-11-02
+
+
+
+\### Added
+
+\- Sắp xếp giỏ hàng theo tiêu đề DVD.
+
+\- Sắp xếp giỏ hàng theo giá tăng dần.
+
+\- Tìm DVD theo thể loại bằng search\_by\_category().
+
+
+
+\## \[1.0.0] - 2026-11-02
+
+
+
 \### Added
 
 \- Sắp xếp giỏ hàng theo tiêu đề DVD.
