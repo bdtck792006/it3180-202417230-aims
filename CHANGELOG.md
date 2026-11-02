@@ -6,14 +6,6 @@
 
 
 
-\### Added
-
-\- Sắp xếp giỏ hàng theo tiêu đề DVD.
-
-\- Sắp xếp giỏ hàng theo giá tăng dần.
-
-
-
 \## \[1.0.0] - 2026-11-02
 
 

@@ -26,12 +26,6 @@ class Cart:
     def total_cost(self):
         return sum(item.cost for item in self.items)
 
-    def sort_by_title(self):
-        self.items.sort(key=lambda dvd: dvd.title)
-
-    def sort_by_cost(self):
-        self.items.sort(key=lambda dvd: dvd.cost)
-
     def print_cart(self):
         print("***********************CART***********************")
         print("Ordered Items:")
